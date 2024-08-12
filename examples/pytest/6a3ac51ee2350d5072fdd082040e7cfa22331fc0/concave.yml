@@ -1,0 +1,15 @@
+language: python
+version: 3.10
+codebase:
+  repo: pytest-dev/pytest
+  commit: 6a3ac51ee2350d5072fdd082040e7cfa22331fc0
+lifecycle:
+  end_base_build:
+    - pip install .
+
+functions:
+  - code/fulltext_search
+  - code/symbol_search
+  - code/vector_search:
+      type: tidb_cloud
+      endpoint: "http://tidb-cloud:2379"
