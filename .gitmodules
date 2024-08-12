@@ -1,0 +1,4 @@
+[submodule "examples/pytest/6a3ac51ee2350d5072fdd082040e7cfa22331fc0/src"]
+	path = examples/pytest/6a3ac51ee2350d5072fdd082040e7cfa22331fc0/src
+	url = https://github.com/pytest-dev/pytest.git
+	branch = main
